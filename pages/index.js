@@ -22,7 +22,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      blog: data.contents,
+      blogs: data.contents,
     },
   };
 };
