@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { client } from "../libs/client";
 
-export default function Home({ blog }) {
+export default function Home({ blogs }) {
   return (
     <div>
       <ul>
-        {blog.map((blog) => (
+        {blogs.map((blog) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
               <a>{blog.title}</a>
