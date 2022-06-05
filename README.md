@@ -1,3 +1,9 @@
+# MicroCMS_NextJS_Blog
+
+MicroCMS + NextJS でブログを作成
+
+[デプロイ先](https://micro-cms-next-js-blog-t-shinkai00.vercel.app/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
