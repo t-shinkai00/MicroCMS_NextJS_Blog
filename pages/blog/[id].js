@@ -1,4 +1,5 @@
 import { client } from "../../libs/client";
+import Image from "next/image";
 import styles from "../../styles/Home.module.scss";
 
 export default function BlogId({ blog }) {
@@ -7,6 +8,14 @@ export default function BlogId({ blog }) {
       <h1 className={styles.title}>{blog.title}</h1>
       <p className={styles.publishedAt}>{`publishedAt: ${blog.publishedAt}`}</p>
       <p className={styles.updatedAt}>{`updatedAt: ${blog.updatedAt}`}</p>
+      {console.log(blog.image)}
+      <Image
+        src={blog.image.url}
+        alt={blog.title}
+        height={blog.image.height}
+        width={blog.image.width}
+      />
+      <p className="category">{blog.category && `${blog.category.name}`}</p>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,
